@@ -50,10 +50,12 @@ if(runImproved) {
     op = 0;
     resultSet.Clear();
 
+    Regex regex = new Regex(pattern, RegexOptions.Compiled);
+
     for (int i=0; i<text.Length-1; i++)
         for (int j=text.Length; j>i; j--){
         op++; 
-        var match = Regex.Match(text.Substring(i, j-i), pattern);
+        var match = regex.Match(text.Substring(i, j-i));
 
             if (match.Success) {
                 PrintIfFound(match, i);            
