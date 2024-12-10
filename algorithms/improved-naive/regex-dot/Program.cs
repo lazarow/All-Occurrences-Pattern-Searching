@@ -1,10 +1,12 @@
-﻿using System;
-using System.Text.RegularExpressions;
-using System.Collections;
+﻿using System.Text.RegularExpressions;
+
+string fileName = args.Length == 2 ? args[0] : "test.txt";
+
+bool runImproved = args[1] == "1";
 
 var resultSet = new HashSet<string>();
 
-string[] data = File.ReadAllLines("text.txt");
+string[] data = File.ReadAllLines(fileName);
 
 string text = data[0];
 string pattern = data[1];
@@ -17,7 +19,7 @@ void PrintIfFound(Match match, int start) {
     Console.WriteLine($"{start+match.Index}, {start+end}");
 }
 
-// int op = 0;
+int op = 0;
 
 // void FindIter(int start, int length) {
 //     op++;
@@ -44,50 +46,53 @@ void PrintIfFound(Match match, int start) {
 
 // Console.WriteLine($"Size of set: {resultSet.Count}");
 
-// op = 0;
-// resultSet.Clear();
+if(runImproved) {
+    op = 0;
+    resultSet.Clear();
 
-// for (int i=0; i<text.Length-1; i++)
-//     for (int j=text.Length; j>i; j--){
-//        op++; 
-//        var match = Regex.Match(text.Substring(i, j-i), pattern);
+    for (int i=0; i<text.Length-1; i++)
+        for (int j=text.Length; j>i; j--){
+        op++; 
+        var match = Regex.Match(text.Substring(i, j-i), pattern);
 
-//         if (match.Success) {
-//             PrintIfFound(match, i);            
-//         }
-//     }
-
-// //Console.Write(string.Join("\n", resultSet)); 
-
-// Console.WriteLine();
-
-// Console.WriteLine($"Naive method operations: {op}");
-
-// Console.WriteLine($"Size of set: {resultSet.Count}");
-
-int op = 0;
-resultSet.Clear();
-
-Regex regex = new Regex(pattern, RegexOptions.Compiled);
-
-for (int i=0; i < text.Length-1; i++)
-    for (int j=text.Length; j>i;){
-       op++; 
-       var match = regex.Match(text.Substring(i, j-i));
-
-        if (match.Success) {
-            PrintIfFound(match, i);            
-            i = i + match.Index;
-            j = i + match.Length -1;            
+            if (match.Success) {
+                PrintIfFound(match, i);            
+            }
         }
-        else
-            break;        
-    }
 
-//Console.Write(string.Join("\n", resultSet)); 
+    //Console.Write(string.Join("\n", resultSet));
 
-Console.WriteLine();
+    Console.WriteLine();
 
-Console.WriteLine($"Inproved method operations: {op}");
+    Console.WriteLine($"Naive method operations: {op}");
 
-Console.WriteLine($"Size of set: {resultSet.Count}");
+    Console.WriteLine($"Size of set: {resultSet.Count}");
+}
+else {
+    op = 0;
+    resultSet.Clear();
+
+    Regex regex = new Regex(pattern, RegexOptions.Compiled);
+
+    for (int i=0; i < text.Length-1; i++)
+        for (int j=text.Length; j>i;){
+        op++; 
+        var match = regex.Match(text.Substring(i, j-i));
+
+            if (match.Success) {
+                PrintIfFound(match, i);            
+                i = i + match.Index;
+                j = i + match.Length -1;            
+            }
+            else
+                break;        
+        }
+
+    //Console.Write(string.Join("\n", resultSet)); 
+
+    Console.WriteLine();
+
+    Console.WriteLine($"Inproved method operations: {op}");
+
+    Console.WriteLine($"Size of set: {resultSet.Count}");
+}
