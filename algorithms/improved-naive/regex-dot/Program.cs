@@ -1,8 +1,14 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Diagnostics;
+using System.Text.RegularExpressions;
 
-string fileName = args.Length == 2 ? args[0] : "test.txt";
+string defaultFileName = "/Users/lukaszstrak/Repo/All-Occurrences-Pattern-Searching/datasets/dataset01.txt";
 
-bool runImproved = args[1] == "1";
+string fileName = args.Length == 2 ? args[0] : defaultFileName;
+
+bool runImproved = true;
+
+if (args.Length == 2)
+    runImproved = args[1] == "2";
 
 var resultSet = new HashSet<string>();
 
@@ -14,9 +20,12 @@ string pattern = data[1];
 Console.WriteLine($"Finding all patterns: {pattern} for the text.");
 
 void PrintIfFound(Match match, int start) {
+    if(string.IsNullOrEmpty(match.Captures[0].Value))
+        return;
     var end = match.Index + match.Length;    
-    resultSet.Add($"{start+match.Index}:{start+end} {match.Captures[0].Value}"); 
-    Console.WriteLine($"{start+match.Index}, {start+end}");
+    bool added = resultSet.Add($"{start+match.Index}:{start+end} {match.Captures[0].Value}"); 
+    if (added)
+        Console.WriteLine($"{start+match.Index}, {start+end} {match.Captures[0].Value}");
 }
 
 int op = 0;
@@ -46,7 +55,7 @@ int op = 0;
 
 // Console.WriteLine($"Size of set: {resultSet.Count}");
 
-if(runImproved) {
+if(!runImproved) {
     op = 0;
     resultSet.Clear();
 
@@ -57,9 +66,9 @@ if(runImproved) {
         op++; 
         var match = regex.Match(text.Substring(i, j-i));
 
-            if (match.Success) {
-                PrintIfFound(match, i);            
-            }
+        if (match.Success) {
+            PrintIfFound(match, i);            
+        }
         }
 
     //Console.Write(string.Join("\n", resultSet));
@@ -77,13 +86,12 @@ else {
     Regex regex = new Regex(pattern, RegexOptions.Compiled);
 
     for (int i=0; i < text.Length-1; i++)
-        for (int j=text.Length; j>i;){
-        op++; 
-        var match = regex.Match(text.Substring(i, j-i));
+        for (int j=text.Length; j>i;) {
+            op++; 
+            var match = regex.Match(text.Substring(i, j-i));
 
             if (match.Success) {
-                PrintIfFound(match, i);            
-                i = i + match.Index;
+                PrintIfFound(match, i);                
                 j = i + match.Length -1;            
             }
             else
@@ -94,7 +102,7 @@ else {
 
     Console.WriteLine();
 
-    Console.WriteLine($"Inproved method operations: {op}");
+    Console.WriteLine($"Improved method operations: {op}");
 
     Console.WriteLine($"Size of set: {resultSet.Count}");
 }
