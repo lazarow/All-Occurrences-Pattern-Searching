@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo ===== dataset01.txt =====
 time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset01.txt | wc -l
 time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset01.txt 2 | wc -l
