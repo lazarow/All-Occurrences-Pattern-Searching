@@ -108,39 +108,3 @@ time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/d
 echo ===== dataset36.txt =====
 time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset36.txt | wc -l
 time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset36.txt 2 | wc -l
-echo ===== dataset37.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset37.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset37.txt 2 | wc -l
-echo ===== dataset38.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset38.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset38.txt 2 | wc -l
-echo ===== dataset39.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset39.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset39.txt 2 | wc -l
-echo ===== dataset40.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset40.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset40.txt 2 | wc -l
-echo ===== dataset41.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset41.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset41.txt 2 | wc -l
-echo ===== dataset42.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset42.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset42.txt 2 | wc -l
-echo ===== dataset43.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset43.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset43.txt 2 | wc -l
-echo ===== dataset44.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset44.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset44.txt 2 | wc -l
-echo ===== dataset45.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset45.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset45.txt 2 | wc -l
-echo ===== dataset46.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset46.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset46.txt 2 | wc -l
-echo ===== dataset47.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset47.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset47.txt 2 | wc -l
-echo ===== dataset48.txt =====
-time algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset48.txt | wc -l
-time algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot datasets/dataset48.txt 2 | wc -l
