@@ -1,108 +1,38 @@
-﻿using System.Diagnostics;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
-string defaultFileName = "/Users/lukaszstrak/Repo/All-Occurrences-Pattern-Searching/datasets/dataset01.txt";
+if (args.Length == 0)
+{
+    Console.WriteLine("Please provide a file name as the first argument.");
+    return;
+}
 
-string fileName = args.Length == 2 ? args[0] : defaultFileName;
+// Read the file name from the command line.
+string fileName = args[0];
 
-bool runImproved = true;
-
-if (args.Length == 2)
-    runImproved = args[1] == "2";
-
-var resultSet = new HashSet<string>();
-
+// Read the file.
 string[] data = File.ReadAllLines(fileName);
 
+// Get the text and regular expression from the file.
 string text = data[0];
-string pattern = data[1];
+string primaryPattern = data[1];
+string secondaryPattern = primaryPattern.StartsWith("^") ? primaryPattern : "^" + primaryPattern;
+secondaryPattern = secondaryPattern.EndsWith("$") ? secondaryPattern : secondaryPattern + "$";
 
-Console.WriteLine($"Finding all patterns: {pattern} for the text.");
+Regex primaryRegex = new Regex(primaryPattern, RegexOptions.Compiled);
+Regex secondaryRegex = new Regex(secondaryPattern, RegexOptions.Compiled);
 
-void PrintIfFound(Match match, int start) {
-    if(string.IsNullOrEmpty(match.Captures[0].Value))
-        return;
-    var end = match.Index + match.Length;    
-    bool added = resultSet.Add($"{start+match.Index}:{start+end} {match.Captures[0].Value}"); 
-    if (added)
-        Console.WriteLine($"{start+match.Index}, {start+end} {match.Captures[0].Value}");
-}
+int textLength = text.Length;
 
-int op = 0;
-
-// void FindIter(int start, int length) {
-//     op++;
-//     if (start + length > text.Length)
-//         return;
-    
-//     var match = Regex.Match(text.Substring(start, length), pattern);
-
-//     if (match.Success) {
-//         PrintIfFound(match, start);
-//         int newStart = start + match.Index;        
-//         FindIter(newStart, match.Length-1);
-//         FindIter(newStart+1, match.Length-1);
-//     }
-// }
-
-// FindIter(0, text.Length);
-
-// //Console.Write(string.Join("\n", resultSet));
-
-// Console.WriteLine();
-
-// Console.WriteLine($"Number of operations: {op}");
-
-// Console.WriteLine($"Size of set: {resultSet.Count}");
-
-if(!runImproved) {
-    op = 0;
-    resultSet.Clear();
-
-    Regex regex = new Regex(pattern, RegexOptions.Compiled);
-
-    for (int i=0; i<text.Length-1; i++)
-        for (int j=text.Length; j>i; j--){
-        op++; 
-        var match = regex.Match(text.Substring(i, j-i));
-
-        if (match.Success) {
-            PrintIfFound(match, i);            
-        }
-        }
-
-    //Console.Write(string.Join("\n", resultSet));
-
-    Console.WriteLine();
-
-    Console.WriteLine($"Naive method operations: {op}");
-
-    Console.WriteLine($"Size of set: {resultSet.Count}");
-}
-else {
-    op = 0;
-    resultSet.Clear();
-
-    Regex regex = new Regex(pattern, RegexOptions.Compiled);
-
-    for (int i=0; i < text.Length-1; i++)
-        for (int j=text.Length; j>i;) {
-            op++; 
-            var match = regex.Match(text.Substring(i, j-i));
-
-            if (match.Success) {
-                PrintIfFound(match, i);                
-                j = i + match.Length -1;            
+for (int k = 0; k < textLength; k++) {
+    var match = primaryRegex.Match(text, k);
+    if (match.Success && match.Index == k) {
+        int m = match.Length;
+        Console.WriteLine($"{k}, {m}");
+        for (int j = 1; j < m; j++) {
+            var secondaryMatch = secondaryRegex.Match(text, k, j);
+            if (secondaryMatch.Success) {
+                Console.WriteLine($"{k}, {j}");
             }
-            else
-                break;        
         }
-
-    //Console.Write(string.Join("\n", resultSet)); 
-
-    Console.WriteLine();
-
-    Console.WriteLine($"Improved method operations: {op}");
-
-    Console.WriteLine($"Size of set: {resultSet.Count}");
+    }
 }
