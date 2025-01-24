@@ -26,4 +26,4 @@ def gen(size, starparent=False):
         return '(' + gen(r) + op + gen(size - r) + ')'
 
 print(''.join(random.choices(TERMINALS, k=sizeOfText)))
-print(gen(sizeOfPattern))
+print(gen(sizeOfPattern, True))
