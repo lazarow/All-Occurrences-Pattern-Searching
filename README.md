@@ -28,8 +28,8 @@ Generate the datasets with the following commands:
 
 ```
 python generate.py 16 2 100000 4250667 > datasets/dataset01.txt
-python generate.py 16 2 500000 2444446 > datasets/dataset02.txt
-python generate.py 16 2 1000000 3864871 > datasets/dataset03.txt
+python generate.py 16 2 500000 2444451 > datasets/dataset02.txt
+python generate.py 16 2 1000000 3864872 > datasets/dataset03.txt
 python generate.py 16 8 100000 8206617 > datasets/dataset04.txt
 python generate.py 16 8 500000 3137384 > datasets/dataset05.txt
 python generate.py 16 8 1000000 6065477 > datasets/dataset06.txt
