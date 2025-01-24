@@ -6,7 +6,7 @@ static int Match(Automaton aut, ref string text, int idx, int max_length)
     int max_path = -1;
     State? state = aut.Initial;
     if (state.Accept) max_path = 0;
-    while ((state = state!.Step(text[idx++])) is not null && length < max_length)
+    while (length < max_length && (state = state!.Step(text[idx++])) is not null)
     {
         ++length;
         if (state.Accept) max_path = length;
