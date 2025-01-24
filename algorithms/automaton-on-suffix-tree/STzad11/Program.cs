@@ -160,7 +160,7 @@ public class SuffixTree
         {
           if (i < TextLength && i <= i + j - 1)
           {
-            Console.WriteLine($"{i}, {i + j - 1}");
+            Console.WriteLine($"{i}, {j}");
           }
         }
       }
