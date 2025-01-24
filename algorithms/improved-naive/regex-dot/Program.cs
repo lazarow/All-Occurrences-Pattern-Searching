@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using Fare;
 
 if (args.Length == 0)
 {
@@ -18,20 +19,25 @@ string primaryPattern = data[1];
 string secondaryPattern = primaryPattern.StartsWith("^") ? primaryPattern : "^" + primaryPattern;
 secondaryPattern = secondaryPattern.EndsWith("$") ? secondaryPattern : secondaryPattern + "$";
 
-Regex primaryRegex = new Regex(primaryPattern, RegexOptions.Compiled);
-Regex secondaryRegex = new Regex(secondaryPattern, RegexOptions.Compiled);
+//Regex primaryRegex = new Regex(primaryPattern, RegexOptions.Compiled);
+//Regex secondaryRegex = new Regex(secondaryPattern, RegexOptions.Compiled);
+
+Automaton primaryRegex = new RegExp(primaryPattern).ToAutomaton();
+Automaton secondaryRegex = new RegExp(secondaryPattern).ToAutomaton();
+
+primaryRegex.Run()
 
 int textLength = text.Length;
 
 for (int k = 0; k < textLength; k++) {
     var match = primaryRegex.Match(text, k);
-    if (match.Success && match.Index == k) {
+    if (match.Success && match.Length > 0 && match.Index == k) {
         int m = match.Length;
-        Console.WriteLine($"{k}, {m}");
+        Console.WriteLine($"{k}, {k + m - 1}");
         for (int j = 1; j < m; j++) {
-            var secondaryMatch = secondaryRegex.Match(text, k, j);
+            var secondaryMatch = secondaryRegex.Match(text.Substring(k, j));
             if (secondaryMatch.Success) {
-                Console.WriteLine($"{k}, {j}");
+                Console.WriteLine($"{k}, {k + j - 1}");
             }
         }
     }
