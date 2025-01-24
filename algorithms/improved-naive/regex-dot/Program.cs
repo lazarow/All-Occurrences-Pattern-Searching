@@ -1,5 +1,18 @@
-﻿using System.Text.RegularExpressions;
-using Fare;
+﻿using Fare;
+
+int Match(Automaton aut, ref string text, int idx)
+{
+    int length = 0;
+    int max_path = -1;
+    State? state = aut.Initial;
+    if (state.Accept) max_path = 0;
+    while ((state = state!.Step(text[idx++])) is not null)
+    {
+        ++length;
+        if (state.Accept) max_path = length;
+    }
+    return max_path;
+}
 
 if (args.Length == 0)
 {
