@@ -35,7 +35,7 @@ Automaton regex = new RegExp(pattern).ToAutomaton();
 int textLength = text.Length;
 
 for (int k = 0; k < textLength; k++) {
-    int m = Match(regex, ref text, k, textLength);
+    int m = Match(regex, ref text, k, textLength - k);
     if (m > 0) {
         Console.WriteLine($"{k}, {k + m - 1}");
         for (int j = 1; j < m; j++) {
