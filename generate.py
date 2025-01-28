@@ -9,7 +9,6 @@ seed = int(sys.argv[4])
 random.seed(seed)
 
 TERMINALS = [chr(ord('a') + i) for i in range(sizeOfAlphabet)]
-OPERATORS = ['*', '', '|']
 
 class Node:
     def __init__(self, chars=''):
@@ -25,17 +24,17 @@ def generate_tree(size, prefix='', suffix=''):
     root = Node()
     
     if size == 1:
-        root.chars = prefix + random.choice(TERMINALS) + ('*' if random.random() < 0.05 else '') + suffix
+        root.chars = prefix + random.choice(TERMINALS) + suffix
         return root
     
     left_size = random.randint(1, size-1)
     right_size = size - left_size
 
-    if random.random() < 0.1:
+    if random.random() < 0.075:
         root.chars = prefix + '.*' + suffix
         root.left = generate_tree(left_size)
         root.right = generate_tree(right_size)
-    elif random.random() < 0.1 and len(prefix) == 0 and len(suffix) == 0:
+    elif random.random() < 0.2 and len(prefix) == 0 and len(suffix) == 0:
         root.chars = prefix + '|' + suffix
         root.left = generate_tree(left_size, '(', '')
         root.right = generate_tree(right_size, '', ')')
