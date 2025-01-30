@@ -49,12 +49,12 @@ with open('configurations.json', 'r') as file:
                 print(f"Command executed too quickly ({executionTime} s). Adjusting the command.")
                 seedOfPattern += 1
             elif executionTime > 120:
-                print(f"Command took too long ({executionTime} s). Adjusting the command.")
+                print(f"Command took too long ({executionTime} s, {sizeOfOutput}). Adjusting the command.")
                 seedOfPattern += 1
             elif sizeOfOutput == 0:
-                print(f"Command executed with no output ({executionTime} s). Adjusting the command.")
+                print(f"Command executed with no output ({executionTime} s, {sizeOfOutput}). Adjusting the command.")
                 seedOfPattern += 1
             else:
-                print(f"Command executed within the desired time range ({executionTime} s).")
+                print(f"Command executed within the desired time range ({executionTime} s, {sizeOfOutput}).")
                 print(f"FINAL SEED FOR pattern{datasetNumber}: {seedOfPattern}")
                 break
