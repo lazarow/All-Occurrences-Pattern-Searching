@@ -1,4 +1,5 @@
 import json
+import sys
 from sys import platform
 import subprocess
 import time
@@ -57,4 +58,6 @@ with open('configurations.json', 'r') as file:
             else:
                 print(f"Command executed within the desired time range ({executionTime} s, {sizeOfOutput}).")
                 print(f"FINAL SEED FOR pattern{datasetNumber}: {seedOfPattern}")
+                sys.stdout.flush()
                 break
+            sys.stdout.flush()
