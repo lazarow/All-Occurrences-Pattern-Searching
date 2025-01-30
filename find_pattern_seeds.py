@@ -56,4 +56,5 @@ with open('configurations.json', 'r') as file:
                 seedOfPattern += 1
             else:
                 print(f"Command executed within the desired time range ({executionTime} s).")
+                print(f"FINAL SEED FOR pattern{datasetNumber}: {seedOfPattern}")
                 break
