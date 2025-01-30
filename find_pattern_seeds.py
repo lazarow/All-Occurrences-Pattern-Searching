@@ -39,6 +39,7 @@ with open('configurations.json', 'r') as file:
             generationCommand = f"{pythonCommand} generate_pattern.py {sizeOfPattern} {sizeOfAlphabet} {seedOfPattern} > datasets/pattern{datasetNumber}.txt"
             subprocess.run(generationCommand, shell=True)
             print(f"Running generation command: {generationCommand}")
+            sys.stdout.flush()
             subprocess.run(f"cat datasets/text{datasetNumber}.txt datasets/pattern{datasetNumber}.txt > datasets/dataset{datasetNumber}.txt", shell=True)
             algorithmCommand = f"algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 datasets/dataset{datasetNumber}.txt"
             [executionTime, sizeOfOutput] = run_command(algorithmCommand, 120)
