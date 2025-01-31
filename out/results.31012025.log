@@ -1,0 +1,433 @@
+===== dataset01.txt =====
+timelimit: sending warning signal 15
+56227
+
+real	5m0,078s
+user	1m29,123s
+sys	0m2,167s
+timelimit: sending warning signal 15
+13
+
+real	5m0,054s
+user	1m34,520s
+sys	0m1,806s
+===== dataset02.txt =====
+timelimit: sending warning signal 15
+488390
+
+real	5m0,122s
+user	1m38,468s
+sys	0m5,337s
+timelimit: sending warning signal 15
+74
+
+real	5m0,047s
+user	1m37,513s
+sys	0m1,848s
+===== dataset03.txt =====
+timelimit: sending warning signal 15
+4950327
+
+real	5m0,164s
+user	1m32,758s
+sys	0m19,874s
+timelimit: sending warning signal 15
+543
+
+real	5m0,039s
+user	1m37,995s
+sys	0m1,938s
+===== dataset04.txt =====
+450360
+
+real	1m0,218s
+user	0m18,911s
+sys	0m2,530s
+timelimit: sending warning signal 15
+199
+
+real	5m0,026s
+user	1m49,008s
+sys	0m2,015s
+===== dataset05.txt =====
+1755913
+
+real	1m17,583s
+user	0m31,301s
+sys	0m7,464s
+timelimit: sending warning signal 15
+618
+
+real	5m0,036s
+user	2m5,481s
+sys	0m2,327s
+===== dataset06.txt =====
+6584
+
+real	0m23,685s
+user	0m11,138s
+sys	0m0,482s
+timelimit: sending warning signal 15
+10
+
+real	5m0,029s
+user	2m17,588s
+sys	0m2,502s
+===== dataset07.txt =====
+2009
+
+real	0m19,604s
+user	0m9,355s
+sys	0m0,246s
+timelimit: sending warning signal 15
+5
+
+real	5m0,025s
+user	2m25,909s
+sys	0m2,797s
+===== dataset08.txt =====
+1585217
+
+real	3m41,831s
+user	2m11,582s
+sys	0m12,193s
+timelimit: sending warning signal 15
+9
+
+real	5m0,019s
+user	3m17,703s
+sys	0m3,636s
+===== dataset09.txt =====
+9663506
+
+real	1m40,805s
+user	0m54,662s
+sys	0m31,083s
+timelimit: sending warning signal 15
+3370
+
+real	5m0,022s
+user	3m56,242s
+sys	0m4,426s
+===== dataset10.txt =====
+46871
+
+real	1m59,755s
+user	1m58,286s
+sys	0m1,868s
+timelimit: sending warning signal 15
+5
+
+real	5m0,006s
+user	4m55,918s
+sys	0m4,081s
+===== dataset11.txt =====
+411325
+
+real	0m47,488s
+user	0m47,037s
+sys	0m2,313s
+timelimit: sending warning signal 15
+107
+
+real	5m0,006s
+user	4m56,009s
+sys	0m4,032s
+===== dataset12.txt =====
+378
+
+real	0m18,437s
+user	0m18,694s
+sys	0m0,392s
+timelimit: sending warning signal 15
+1
+
+real	5m0,007s
+user	4m56,488s
+sys	0m3,512s
+===== dataset13.txt =====
+28025
+
+real	0m46,065s
+user	0m45,612s
+sys	0m1,001s
+timelimit: sending warning signal 15
+6
+
+real	5m0,007s
+user	4m56,433s
+sys	0m3,585s
+===== dataset14.txt =====
+3560
+
+real	0m15,408s
+user	0m15,557s
+sys	0m0,288s
+timelimit: sending warning signal 15
+3
+
+real	5m0,010s
+user	4m56,553s
+sys	0m3,459s
+===== dataset15.txt =====
+4241
+
+real	0m7,344s
+user	0m7,631s
+sys	0m0,323s
+timelimit: sending warning signal 15
+8
+
+real	5m0,011s
+user	4m56,344s
+sys	0m3,664s
+===== dataset16.txt =====
+72514
+
+real	0m23,201s
+user	0m23,094s
+sys	0m0,869s
+timelimit: sending warning signal 15
+32
+
+real	5m0,011s
+user	4m57,279s
+sys	0m2,784s
+===== dataset17.txt =====
+1569
+
+real	1m4,974s
+user	1m4,597s
+sys	0m0,822s
+timelimit: sending warning signal 15
+4
+
+real	5m0,011s
+user	4m56,434s
+sys	0m3,586s
+===== dataset18.txt =====
+4231
+
+real	1m0,710s
+user	1m0,486s
+sys	0m0,941s
+timelimit: sending warning signal 15
+1
+
+real	5m0,007s
+user	4m56,200s
+sys	0m3,815s
+===== dataset19.txt =====
+2508
+
+real	0m39,349s
+user	0m38,987s
+sys	0m0,556s
+timelimit: sending warning signal 15
+6
+
+real	5m0,009s
+user	4m56,406s
+sys	0m3,608s
+===== dataset20.txt =====
+1408208
+
+real	0m6,955s
+user	0m6,682s
+sys	0m3,002s
+timelimit: sending warning signal 15
+4639
+
+real	5m0,011s
+user	4m56,370s
+sys	0m3,845s
+===== dataset21.txt =====
+1
+
+real	0m17,317s
+user	0m17,545s
+sys	0m0,316s
+timelimit: sending warning signal 15
+1
+
+real	5m0,011s
+user	4m56,246s
+sys	0m3,773s
+===== dataset22.txt =====
+292
+
+real	0m23,921s
+user	0m23,744s
+sys	0m0,336s
+timelimit: sending warning signal 15
+187
+
+real	5m0,010s
+user	4m56,360s
+sys	0m3,750s
+===== dataset23.txt =====
+319982
+
+real	0m2,800s
+user	0m2,885s
+sys	0m0,821s
+timelimit: sending warning signal 15
+3582
+
+real	5m0,012s
+user	4m56,732s
+sys	0m3,459s
+===== dataset24.txt =====
+234
+
+real	0m10,649s
+user	0m11,062s
+sys	0m0,262s
+timelimit: sending warning signal 15
+1
+
+real	5m0,012s
+user	4m57,348s
+sys	0m2,667s
+===== dataset25.txt =====
+1186178
+
+real	0m4,399s
+user	0m4,092s
+sys	0m2,264s
+timelimit: sending warning signal 15
+4726
+
+real	5m0,011s
+user	4m57,795s
+sys	0m2,402s
+===== dataset26.txt =====
+279968
+
+real	0m29,954s
+user	0m30,074s
+sys	0m2,166s
+timelimit: sending warning signal 15
+75
+
+real	5m0,011s
+user	4m57,521s
+sys	0m2,568s
+===== dataset27.txt =====
+2
+
+real	0m3,186s
+user	0m3,484s
+sys	0m0,198s
+2
+
+real	0m0,499s
+user	0m0,459s
+sys	0m0,038s
+===== dataset28.txt =====
+17415
+
+real	0m1,557s
+user	0m1,602s
+sys	0m0,173s
+timelimit: sending warning signal 15
+156
+
+real	5m0,012s
+user	4m57,453s
+sys	0m2,644s
+===== dataset29.txt =====
+1223
+
+real	0m4,655s
+user	0m4,808s
+sys	0m0,188s
+timelimit: sending warning signal 15
+2
+
+real	5m0,012s
+user	4m57,203s
+sys	0m2,817s
+===== dataset30.txt =====
+29138
+
+real	0m3,651s
+user	0m4,081s
+sys	0m0,322s
+timelimit: sending warning signal 15
+1
+
+real	5m0,012s
+user	4m57,410s
+sys	0m2,608s
+===== dataset31.txt =====
+5448
+
+real	0m37,430s
+user	0m37,124s
+sys	0m0,570s
+timelimit: sending warning signal 15
+1
+
+real	5m0,012s
+user	4m57,320s
+sys	0m2,700s
+===== dataset32.txt =====
+1848
+
+real	0m1,478s
+user	0m1,595s
+sys	0m0,129s
+timelimit: sending warning signal 15
+40
+
+real	5m0,012s
+user	4m57,354s
+sys	0m2,714s
+===== dataset33.txt =====
+216
+
+real	0m4,427s
+user	0m4,804s
+sys	0m0,212s
+timelimit: sending warning signal 15
+2
+
+real	5m0,012s
+user	4m57,282s
+sys	0m2,734s
+===== dataset34.txt =====
+75
+
+real	0m1,352s
+user	0m1,396s
+sys	0m0,070s
+timelimit: sending warning signal 15
+4
+
+real	5m0,011s
+user	4m57,422s
+sys	0m2,606s
+===== dataset35.txt =====
+0
+
+real	0m2,071s
+user	0m2,191s
+sys	0m0,109s
+0
+
+real	0m0,980s
+user	0m0,956s
+sys	0m0,042s
+===== dataset36.txt =====
+2
+
+real	0m3,035s
+user	0m3,182s
+sys	0m0,206s
+timelimit: sending warning signal 15
+1
+
+real	5m0,012s
+user	4m57,450s
+sys	0m2,569s
