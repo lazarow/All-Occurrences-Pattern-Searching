@@ -1,42 +1,37 @@
 ===== dataset01.txt =====
-timelimit: sending warning signal 15
-56227
+33889
 
-real	5m0,078s
-user	1m29,123s
-sys	0m2,167s
+real    0m5,722s
+user    0m5,750s
+sys     0m0,343s
 timelimit: sending warning signal 15
-13
+66
 
-real	5m0,054s
-user	1m34,520s
-sys	0m1,806s
+real    5m0,012s
+user    4m57,560s
+sys     0m2,527s
 ===== dataset02.txt =====
-timelimit: sending warning signal 15
-488390
+1939
 
-real	5m0,122s
-user	1m38,468s
-sys	0m5,337s
-timelimit: sending warning signal 15
-74
+real    0m1,295s
+user    0m1,352s
+sys     0m0,125s
+1939
 
-real	5m0,047s
-user	1m37,513s
-sys	0m1,848s
+real    0m0,210s
+user    0m0,176s
+sys     0m0,042s
 ===== dataset03.txt =====
-timelimit: sending warning signal 15
-4950327
+10
 
-real	5m0,164s
-user	1m32,758s
-sys	0m19,874s
-timelimit: sending warning signal 15
-543
+real    0m3,084s
+user    0m3,400s
+sys     0m0,197s
+10
 
-real	5m0,039s
-user	1m37,995s
-sys	0m1,938s
+real    0m0,373s
+user    0m0,341s
+sys     0m0,033s
 ===== dataset04.txt =====
 450360
 

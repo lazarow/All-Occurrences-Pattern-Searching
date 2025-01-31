@@ -14,6 +14,18 @@
 
 There are 36 datasets in total.
 
+A dataset file consists:
+
+-   an input text in the first line,
+-   a pattern (regular expression) in the second line.
+
+Example:
+
+```
+cbbdacbcacbabaadbdbdbaacbdcbccabbacacdcbcababdcabcbbcdcbbcaacbacdcbbbdddddcccada
+bd.*bdd(d|bbd.*d)abc(d|a)a
+```
+
 ## Getting Started
 
 ### Requirements
@@ -24,15 +36,36 @@ There are 36 datasets in total.
 
 ...
 
-Generate the datasets with the following commands:
+Generate the predefined datasets with the following commands:
 
 ```
 python generate.py
 ```
 
+Compile the algorithms with the following commands:
+
+```
+cd algorithms/automaton-on-suffix-tree/
+dotnet build -c=Release
+cd algorithms/improved-naive/
+dotnet build -c=Release
+```
+
 ### Running
 
-...
+Run all datasets with the following command:
+
+```
+chmod +x runner.sh
+./runner.sh > out.log 2>&1
+```
+
+Run a single dataset with the following command:
+
+```
+algorithms/automaton-on-suffix-tree/STzad11/bin/Release/net8.0/STzad11 <dataset-path>
+algorithms/improved-naive/regex-dot/bin/Release/net8.0/regex-dot <dataset-path>
+```
 
 ## Authors
 
