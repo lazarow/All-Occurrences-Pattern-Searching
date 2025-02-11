@@ -76,7 +76,7 @@ with open('configurations.json', 'r') as file:
             return traversal(node.left) + node.chars + traversal(node.right)
 
         for _ in range(numberOfRegexes):
-            regex_tree = generate_tree(random.randint(10, 50))
+            regex_tree = generate_tree(random.choice([5,10,15]))
             f.write(separator + traversal(regex_tree) + separator + "\n")
 
         f.close()
