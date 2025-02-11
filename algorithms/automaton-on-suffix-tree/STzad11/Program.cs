@@ -7,6 +7,7 @@ public class SuffixTree
   private static Automaton _automaton;
   private static string _text;
   public static int TextLength = -1;
+  private static int _sumOfCounters = 0;
   
   public class Node {
     public int begin;
@@ -187,7 +188,7 @@ public class SuffixTree
         }
       }
     }
-    Console.WriteLine($"{counter}");
+    _sumOfCounters += counter;
   }
   
   public static void Main(string[] args)
@@ -207,5 +208,6 @@ public class SuffixTree
         _activePlaces.Enqueue(new Place(root, 0, _automaton.Initial));
         performAlgorithm();
     }
+    Console.WriteLine($"{_sumOfCounters}");
   }
 }

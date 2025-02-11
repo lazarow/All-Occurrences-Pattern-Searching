@@ -17,10 +17,10 @@ int n_regexes = data.Length - 1;
 string text = data[0];
 int textLength = text.Length;
 
+int counter = 0;
 for (int iter = 1; iter <= n_regexes; ++iter)
 {
     string pattern = data[iter];
-    int counter = 0;
     Automaton regex = new RegExp(pattern).ToAutomaton();
 
     for (int k = 0; k < textLength; k++)
@@ -38,5 +38,5 @@ for (int iter = 1; iter <= n_regexes; ++iter)
             }
         }
     }
-    Console.WriteLine($"{counter}");
 }
+Console.WriteLine($"{counter}");
