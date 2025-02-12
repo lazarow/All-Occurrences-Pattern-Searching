@@ -1,0 +1,396 @@
+===== dataset01.txt =====
+190
+
+real	0m1,811s
+user	0m1,944s
+sys	0m0,121s
+190
+
+real	0m2,690s
+user	0m2,857s
+sys	0m0,057s
+===== dataset02.txt =====
+308
+
+real	0m3,732s
+user	0m4,053s
+sys	0m0,199s
+308
+
+real	0m5,310s
+user	0m5,474s
+sys	0m0,106s
+===== dataset03.txt =====
+917
+
+real	0m8,200s
+user	0m9,246s
+sys	0m0,368s
+917
+
+real	0m10,129s
+user	0m10,283s
+sys	0m0,144s
+===== dataset04.txt =====
+21
+
+real	0m1,454s
+user	0m1,569s
+sys	0m0,121s
+21
+
+real	0m2,537s
+user	0m2,712s
+sys	0m0,059s
+===== dataset05.txt =====
+14
+
+real	0m3,401s
+user	0m3,862s
+sys	0m0,171s
+14
+
+real	0m5,026s
+user	0m5,195s
+sys	0m0,080s
+===== dataset06.txt =====
+60
+
+real	0m7,899s
+user	0m8,708s
+sys	0m0,345s
+60
+
+real	0m9,509s
+user	0m9,679s
+sys	0m0,128s
+===== dataset07.txt =====
+85
+
+real	0m1,352s
+user	0m1,431s
+sys	0m0,119s
+85
+
+real	0m3,102s
+user	0m3,278s
+sys	0m0,063s
+===== dataset08.txt =====
+2
+
+real	0m2,980s
+user	0m3,168s
+sys	0m0,182s
+2
+
+real	0m5,249s
+user	0m5,412s
+sys	0m0,087s
+===== dataset09.txt =====
+4
+
+real	0m7,114s
+user	0m7,709s
+sys	0m0,313s
+4
+
+real	0m10,431s
+user	0m10,583s
+sys	0m0,120s
+===== dataset10.txt =====
+1
+
+real	0m1,317s
+user	0m1,443s
+sys	0m0,107s
+1
+
+real	0m2,824s
+user	0m2,998s
+sys	0m0,077s
+===== dataset11.txt =====
+0
+
+real	0m2,968s
+user	0m3,150s
+sys	0m0,192s
+0
+
+real	0m4,971s
+user	0m5,162s
+sys	0m0,088s
+===== dataset12.txt =====
+1
+
+real	0m7,001s
+user	0m7,748s
+sys	0m0,334s
+1
+
+real	0m10,050s
+user	0m10,233s
+sys	0m0,134s
+===== dataset13.txt =====
+1362
+
+real	0m1,877s
+user	0m2,017s
+sys	0m0,133s
+1362
+
+real	0m5,265s
+user	0m5,474s
+sys	0m0,098s
+===== dataset14.txt =====
+3565
+
+real	0m4,042s
+user	0m4,310s
+sys	0m0,203s
+3565
+
+real	0m9,464s
+user	0m9,643s
+sys	0m0,126s
+===== dataset15.txt =====
+6982
+
+real	0m8,997s
+user	0m10,104s
+sys	0m0,359s
+6982
+
+real	0m20,682s
+user	0m20,798s
+sys	0m0,229s
+===== dataset16.txt =====
+84
+
+real	0m1,652s
+user	0m1,767s
+sys	0m0,120s
+84
+
+real	0m5,390s
+user	0m5,549s
+sys	0m0,089s
+===== dataset17.txt =====
+49
+
+real	0m3,755s
+user	0m4,129s
+sys	0m0,195s
+49
+
+real	0m9,542s
+user	0m9,701s
+sys	0m0,123s
+===== dataset18.txt =====
+1193
+
+real	0m8,123s
+user	0m9,351s
+sys	0m0,365s
+1193
+
+real	0m20,191s
+user	0m20,254s
+sys	0m0,243s
+===== dataset19.txt =====
+1
+
+real	0m1,443s
+user	0m1,516s
+sys	0m0,125s
+1
+
+real	0m5,127s
+user	0m5,326s
+sys	0m0,070s
+===== dataset20.txt =====
+10
+
+real	0m3,239s
+user	0m3,548s
+sys	0m0,209s
+10
+
+real	0m9,153s
+user	0m9,314s
+sys	0m0,155s
+===== dataset21.txt =====
+8
+
+real	0m7,357s
+user	0m8,144s
+sys	0m0,297s
+8
+
+real	0m18,701s
+user	0m18,783s
+sys	0m0,210s
+===== dataset22.txt =====
+0
+
+real	0m1,571s
+user	0m1,689s
+sys	0m0,108s
+0
+
+real	0m5,279s
+user	0m5,494s
+sys	0m0,096s
+===== dataset23.txt =====
+20
+
+real	0m3,055s
+user	0m3,203s
+sys	0m0,178s
+20
+
+real	0m10,631s
+user	0m10,840s
+sys	0m0,128s
+===== dataset24.txt =====
+1
+
+real	0m7,093s
+user	0m7,760s
+sys	0m0,301s
+1
+
+real	0m19,361s
+user	0m19,416s
+sys	0m0,231s
+===== dataset25.txt =====
+4206
+
+real	0m2,564s
+user	0m2,899s
+sys	0m0,140s
+4206
+
+real	0m10,796s
+user	0m10,938s
+sys	0m0,128s
+===== dataset26.txt =====
+6958
+
+real	0m4,748s
+user	0m5,351s
+sys	0m0,215s
+6958
+
+real	0m21,518s
+user	0m21,558s
+sys	0m0,229s
+===== dataset27.txt =====
+20466
+
+real	0m10,125s
+user	0m11,230s
+sys	0m0,399s
+20466
+
+real	0m42,110s
+user	0m42,003s
+sys	0m0,421s
+===== dataset28.txt =====
+305
+
+real	0m1,934s
+user	0m2,068s
+sys	0m0,128s
+305
+
+real	0m10,395s
+user	0m10,510s
+sys	0m0,137s
+===== dataset29.txt =====
+303
+
+real	0m4,161s
+user	0m4,531s
+sys	0m0,211s
+303
+
+real	0m18,357s
+user	0m18,462s
+sys	0m0,191s
+===== dataset30.txt =====
+815
+
+real	0m8,601s
+user	0m9,828s
+sys	0m0,339s
+815
+
+real	0m39,740s
+user	0m39,625s
+sys	0m0,428s
+===== dataset31.txt =====
+17
+
+real	0m1,847s
+user	0m1,953s
+sys	0m0,112s
+17
+
+real	0m10,901s
+user	0m11,019s
+sys	0m0,144s
+===== dataset32.txt =====
+27
+
+real	0m3,519s
+user	0m3,812s
+sys	0m0,194s
+27
+
+real	0m20,126s
+user	0m20,185s
+sys	0m0,232s
+===== dataset33.txt =====
+25
+
+real	0m7,605s
+user	0m8,035s
+sys	0m0,336s
+25
+
+real	0m39,513s
+user	0m39,410s
+sys	0m0,441s
+===== dataset34.txt =====
+68
+
+real	0m1,777s
+user	0m1,896s
+sys	0m0,125s
+68
+
+real	0m10,318s
+user	0m10,501s
+sys	0m0,135s
+===== dataset35.txt =====
+1
+
+real	0m3,233s
+user	0m3,400s
+sys	0m0,176s
+1
+
+real	0m20,502s
+user	0m20,586s
+sys	0m0,219s
+===== dataset36.txt =====
+3
+
+real	0m7,417s
+user	0m8,244s
+sys	0m0,322s
+3
+
+real	0m39,877s
+user	0m39,750s
+sys	0m0,441s

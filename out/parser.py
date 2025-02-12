@@ -6,7 +6,7 @@ def parse_real_time(time_str):
         minutes = int(match.group(1))
         seconds = float(match.group(2).replace(',', '.'))
         total_seconds = minutes * 60 + seconds
-        return total_seconds if total_seconds <= 300 else "timeout"
+        return str(total_seconds).replace('.', ',') if total_seconds <= 300 else "timeout"
     return None
 
 def parse_log_file(filename):
@@ -54,8 +54,8 @@ def parse_log_file(filename):
     
     return results
 
-log_file = "results.31012025.log"
+log_file = "results.11022025.log"
 extracted_data = parse_log_file(log_file)
 
 for data in extracted_data:
-    print(data[4])
+    print(data[1])
