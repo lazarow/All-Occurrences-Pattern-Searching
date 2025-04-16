@@ -7,6 +7,7 @@ public class SuffixTree
   private static Automaton _automaton;
   private static string _text;
   public static int TextLength = -1;
+  private static int _sumOfCounters = 0;
   
   public class Node {
     public int begin;
@@ -151,6 +152,7 @@ public class SuffixTree
   private static void performAlgorithm()
   {
     Place place;
+    int counter = 0;
     while (_activePlaces.TryDequeue(out place))
     {
       if (place.CurrentState.Accept)
@@ -160,7 +162,8 @@ public class SuffixTree
         {
           if (i < TextLength && i <= i + j - 1)
           {
-            Console.WriteLine($"{i}, {j}");
+            // Console.WriteLine($"{i}, {j}");
+            ++counter;
           }
         }
       }
@@ -185,20 +188,26 @@ public class SuffixTree
         }
       }
     }
+    _sumOfCounters += counter;
   }
   
   public static void Main(string[] args)
   {
-    string[] lines = File.ReadAllLines(args[0]); 
+    string[] lines = File.ReadAllLines(args[0]);
+    int n_regexes = lines.Length - 1;
     _text = lines[0].TrimEnd() + "$";
-    _automaton = new RegExp(lines[1].TrimEnd()).ToAutomaton();
     // string text = "aabb$";
     Node root = buildSuffixTree(_text);
     // root.GetSuffixIndices();
     // printTree(root, text, 0);
     // Traverse1(root);
     // Traverse2(root);
-    _activePlaces.Enqueue(new Place(root, 0, _automaton.Initial));
-    performAlgorithm();
+    for (int iter = 1; iter <= n_regexes; ++iter)
+    {
+        _automaton = new RegExp(lines[iter].TrimEnd()).ToAutomaton();
+        _activePlaces.Enqueue(new Place(root, 0, _automaton.Initial));
+        performAlgorithm();
+    }
+    Console.WriteLine($"{_sumOfCounters}");
   }
 }
