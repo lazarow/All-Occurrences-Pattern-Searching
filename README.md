@@ -1,10 +1,11 @@
 # All Occurrences Pattern Searching
 
-...
-
 ## Description
 
-...
+This project implements and compares two algorithms for finding all occurrences including overlaps of regular expression patterns in text:
+
+1. an efficient algorithm using suffix trees and automata,
+2. an improved naive approach using direct pattern matching.
 
 ### Datasets
 
@@ -31,10 +32,9 @@ bd.*bdd(d|bbd.*d)abc(d|a)a
 ### Requirements
 
 -   Python.
+-   .NET 8.
 
 ### Installing
-
-...
 
 Generate the predefined datasets with the following commands:
 
